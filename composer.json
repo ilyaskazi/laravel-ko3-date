@@ -1,0 +1,34 @@
+{
+    "name": "ko3/date",
+    "description": "Kohana Date Helper for Laravel",
+    "type": "library",
+    "keywords": [
+        "Laravel", "Kohana Date", "Open Source", "Helper"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilyas Kazi",
+            "email": "ilyaskazi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ko3\\Date\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ko3\\Date\\DateServiceProvider"
+            ],
+            "aliases": {
+                "Date": "Ko3\\Date\\DateFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5"
+    }
+}
